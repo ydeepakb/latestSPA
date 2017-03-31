@@ -1,0 +1,18 @@
+<div id="slides_control" >
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+           
+             <carousel [interval]="NextPhotoInterval" [noWrap]="noLoopSlides">
+                          <slide *ngFor="let slidez of slides"
+                                 [active]="slidez.active">
+                                    <img [src]="slidez.image" style="margin:auto;height: 350px">
+                                    <div class="carousel-caption">
+                                    <p  style="background-color: transparent;color: white;">{{slidez.caption}}</p>
+                                    </div>
+                          </slide>
+            </carousel>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
