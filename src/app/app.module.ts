@@ -16,11 +16,13 @@ import { OfferComponent } from './component/offer.component';
 import { ContactComponent } from './component/contact.component';
 import {Carousel} from './component/carousal.component';
 import {Slide} from './component/slide.componet'; 
+import {EmailService} from './service/email-service';
 
 @NgModule({
   imports:    [ BrowserModule ,FormsModule, AppRoutingModule,HttpModule],
   declarations: [ AppComponent,HeaderComponent,FooterComponent,AboutUsComponent,HomeComponent,
                    LoginComponent,ContactComponent, FaqComponent,OfferComponent,Carousel,Slide],
+   providers: [EmailService], 
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
